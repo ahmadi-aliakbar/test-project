@@ -18,8 +18,8 @@ data['Class'] = label_encoder.fit_transform(class_labels)
 data_array = np.array(data)
 
 # Extract features (X) and target variable (y) from the NumPy array
-y = data_array[:, -1]  # Target variable
-X = data_array[:, :-1]  # Features
+y = data_array[:, -1] 
+X = data_array[:, :-1]
 
 # Split the data into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
