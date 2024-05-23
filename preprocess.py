@@ -15,7 +15,6 @@ label_encoder = LabelEncoder()
 data['Class'] = label_encoder.fit_transform(class_labels)
 
 
-# Convert DataFrame to array
 data_array = np.array(data)
 
 # Extract features (X) and target variable (y) from the NumPy array
